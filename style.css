@@ -375,10 +375,37 @@ border-radius: 4px;
   margin-bottom: 0;
   color: #333;
 }
+.ddd-span{
+  display:inline-flex;
+  line-height:24px;
+  margin-top:0;
+  margin-bottom: 0;
+  color: #333;
+}
 .dd-span > i{
   color: #333;
 }
 .dd-flex{
   display: flex;
   justify-content: space-around;
+}
+
+.modal-content > .dd-flex{
+  padding: 0 0 20px 0;
+}
+
+.chat{
+font-size: 13px;
+font-weight: 500;
+color: rgba(0,0,0,0.6);
+line-height: 24px;
+padding: 12px;
+border-radius: 8px;
+background-color: #e4e4e4;
+margin-bottom: 13px;
+margin-top: 8px;;
+}
+
+.chip{
+  margin-bottom: 0!important;
 }

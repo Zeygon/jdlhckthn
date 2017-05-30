@@ -261,6 +261,45 @@
         50.77864372789816,
         6.0692596435546875
       ]
+    },
+    {
+      "id": 20108,
+      "name": "ppppp",
+      "date": "TBD",
+      "coord": [],
+      "description": "pppp\n\n",
+      "location": "ppppp",
+      "tags": [
+        "1"
+      ],
+      "category": "2",
+      "maxusers": "44",
+      "users": [
+        "admin"
+      ],
+      "creator": "admin",
+      "coordinates": []
+    },
+    {
+      "id": 82113,
+      "name": "title",
+      "date": "TBD",
+      "coord": [],
+      "description": "description",
+      "location": "somewhere",
+      "tags": [
+        "1"
+      ],
+      "category": "2",
+      "maxusers": "4",
+      "users": [
+        "admin"
+      ],
+      "creator": "admin",
+      "coordinates": [
+        50.78143866775431,
+        6.081748008728028
+      ]
     }
   ]
 }
