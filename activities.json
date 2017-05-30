@@ -34,8 +34,8 @@
       "description": "I'm a competetive swimmer and go swimming on a regular basis. Want to join me?",
       "category": "sport",
       "tags": [
-        "swimming",
-        "indoor"
+        "indoor",
+        "swimming"
       ],
       "maxusers": 4,
       "users": [
@@ -59,6 +59,7 @@
       "category": "learning",
       "tags": [
         "homework",
+        "swimming",
         "maths"
       ],
       "maxusers": 3,

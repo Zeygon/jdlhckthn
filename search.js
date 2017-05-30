@@ -96,3 +96,34 @@ function searchPoints(searchString) {
     b = false;
     search_points.addTo(map);
 };
+
+
+//-----------------------------------------------------------------------------
+//Suche
+
+var tosearch;
+var found;
+$("#search").keyup(function(event) {
+    if (event.keyCode == 13) {
+        resetMap();
+        tosearch=$("#search").val();
+              console.log(tosearch);
+        $.getJSON('activities.json', function (d){
+          console.log("get json search");
+          data = d.activities;
+          console.log("get json search2");
+        })
+        for(var data_count=0;data_count<data.length;data_count++){
+          for(var tag_count=0; tag_count < data[data_count].tags.length;tag_count++){
+            console.log(data[data_count].tags[tag_count] === tosearch);
+
+            console.log(data[data_count].users.length + "   " + data[data_count].maxusers);
+            if(data[data_count].tags[tag_count] === tosearch && data[data_count].users.length < data[data_count].maxusers){
+              console.log("if ist true!!!!!!!!!!");
+              createPoint(data[data_count]).addTo(map);
+            }
+          }
+        }
+
+    }
+});
