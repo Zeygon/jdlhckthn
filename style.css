@@ -257,3 +257,7 @@ border-radius: 4px;
 .nav-wrapper > .row > .col{
   padding: 0!important;
 }
+
+.abort{
+  padding-left: 10px;
+}
