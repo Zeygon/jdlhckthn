@@ -61,25 +61,29 @@ var dataToMap = function() {
 
 function createPoint(marker) {
     //name location und description
-    var marker_content = '<h4 class="center" style="margin:0;">' + marker.name + '</h4><br><b>' + marker.location + '</b><br>' + marker.description + "<br><p>";
+    var marker_content = '<h5 class="center" style="margin:0;">' + marker.name + '</h5><div style="display:inline-block">'
+    marker_content += '<div class="dd-flex" style="padding: 15px 0;"><span class="ddd-span"><i class="material-icons">location_on</i>';
+    marker_content += marker.location;
+    marker_content += '</span><span class="ddd-span"><i class="material-icons">watch_later</i>';
+    marker_content += marker.date;
+    marker_content += '</span><span class="ddd-span"> <i class="material-icons">supervisor_account</i>';
+    marker_content += marker.users.length + "/" + marker.maxusers;
+    marker_content += '</span></div><p>'
+
+
+    marker_content += marker.description;
 
     //---------------category
-    marker_content += '<span class="uppercase badge category">' + marker.category;
+    marker_content += '</p> <div style="display:flex; flex-wrap:wrap;">';
+    marker_content += '<span class="new badge uppercase blue" data-badge-caption="" style="margin-top:5px;">' + marker.category +'</span>'
     //-------------tags
-    marker_content += '<span class="uppercase badge tag">';
     for (var tag_count = 0; tag_count < marker.tags.length; tag_count++) {
-        marker_content += marker.tags[tag_count] + ", ";
+        marker_content += '<span class="new badge uppercase red" data-badge-caption="" style="margin-top:5px;">' + marker.tags[tag_count] +'</span>'
     }
-    marker_content += "</span>";
-    //user/maxuser
-    marker_content += '</p><br><br><i class="material-icons tiny" style="vertical-align: middle;">group</i> ';
-    marker_content += marker.users.length + "/" + marker.maxusers;
-    for (var usr_count = 0; usr_count < marker.users.length; usr_count++) {
-        marker_content += '<span class="user" >' + " " + marker.users[usr_count] + ", ";
-    }
-    marker_content += '<br><br>';
+
+    marker_content += '</div><br><br>';
     marker_content += '<center>' + '<button class="button arrow"><hjoin style="color:#ffffff">Join in!</hjoin>' + '</button>' + '</center>';
-    marker_content += '</span>';
+    marker_content += '</span></div>';
     //farbe
     if(marker.users.length<marker.maxusers){
       console.log("lala");
