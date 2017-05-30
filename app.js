@@ -74,9 +74,7 @@ function createPoint(marker) {
     return point;
 }
 
-var abort = function() {
-    console.log("TODO: abort");
-}
-setTimeout(function(){
-  $('#loader').fadeOut(500);
-},2000);
+$('#brand').fadeIn(300);
+setTimeout(function() {
+    $('#loader').fadeOut(500);
+}, 2000);
