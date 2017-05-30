@@ -81,43 +81,29 @@ function createPoint(marker) {
     marker_content += '<center>' + '<button class="button arrow"><hjoin style="color:#ffffff">Join in!</hjoin>' + '</button>' + '</center>';
     marker_content += '</span>';
     //farbe
-    if (marker.users.length < marker.maxusers) {
-        console.log("lala");
-        switch (marker.category) {
-            case 'sport':
-                var point = L.marker(marker.coordinates, {
-                    icon: greyIcon
-                }).bindPopup(marker_content);
-                break;
-            case 'learning':
-                var point = L.marker(marker.coordinates, {
-                    icon: greenIcon
-                }).bindPopup(marker_content);
-                break;
-            case 'programming':
-                var point = L.marker(marker.coordinates, {
-                    icon: yellowIcon
-                }).bindPopup(marker_content);
-                break;
-            case 'freetime activity':
-                var point = L.marker(marker.coordinates, {
-                    icon: violetIcon
-                }).bindPopup(marker_content);
-                break;
-            case 'gaming':
-                var point = L.marker(marker.coordinates, {
-                    icon: orangeIcon
-                }).bindPopup(marker_content);
-                break;
-            default:
-                var point = L.marker(marker.coordinates, {
-                    icon: blackIcon
-                }).bindPopup(marker_content);
-        }
-    } else {
-        var point = L.marker(marker.coordinates, {
-            icon: redIcon
-        }).bindPopup(marker_content);
+    if(marker.users.length<marker.maxusers){
+      console.log("lala");
+      switch (marker.category){
+        case 'sport' :
+          var point = L.marker(marker.coordinates, { icon: greyIcon }).bindPopup(marker_content);
+          break;
+        case 'learning' :
+          var point = L.marker(marker.coordinates, { icon: greenIcon }).bindPopup(marker_content);
+          break;
+        case 'programming' :
+          var point = L.marker(marker.coordinates, { icon: yellowIcon }).bindPopup(marker_content);
+          break;
+        case 'leisure activity' :
+          var point = L.marker(marker.coordinates, { icon: violetIcon }).bindPopup(marker_content);
+          break;
+        case 'gaming' :
+          var point = L.marker(marker.coordinates, { icon: orangeIcon }).bindPopup(marker_content);
+          break;
+        default :
+          var point = L.marker(marker.coordinates, { icon: blackIcon }).bindPopup(marker_content);
+      }
+    }else {
+      var point = L.marker(marker.coordinates, { icon: redIcon }).bindPopup(marker_content);
     }
 
     return point;
