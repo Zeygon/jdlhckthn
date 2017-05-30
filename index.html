@@ -16,46 +16,67 @@
 
 <body>
     <div id="loader" class="center">
-      <div id="brand" style="margin-top:300px;">
-        <img src="Logo.PNG" alt="" style="padding-top:40%;">
-        <h1>What. Where. When.</h1>
-      </div>
+        <div id="brand" style="margin-top:300px;">
+            <img src="Logo.PNG" alt="" style="padding-top:40%;">
+            <h1>Find stuff around you.</h1>
+        </div>
     </div>
 
-        <div id="map"></div>
-        <div id="search">
-            <div class="search--inner">
-                <input id="input" type="text" name="" placeholder="Search..." value="">
-                <div class="search--more">
-                    <button id="btn-more" class="btn-flat">MORE</button>
-                    <button id="btn-resetSearch" class="btn-flat">RESET</button>
-                </div>
-                <div><br>
-                    <span class="more_tags uppercase white-text badge blue ">#escalation</span>
-                    <span class="more_tags uppercase white-text badge red">#party</span>
-                    <span class="more_tags uppercase white-text badge yellow">#music</span>
-                    <span class="more_tags uppercase white-text badge green">#action</span>
-                    <span class="more_tags uppercase white-text badge grey">#sport</span>
-                    <span class="more_tags uppercase white-text badge black">#adventure</span>
-                    <span class="more_tags uppercase white-text badge pink">#nature</span>
-                    <span class="more_tags uppercase white-text badge orange">#kids</span>
-                    <span class="more_tags uppercase white-text badge purple">#education</span>
-                    <span class="more_tags uppercase white-text badge indigo">#social</span>
-                    <span class="more_tags uppercase white-text badge teal">#talk</span>
-                </div>
+
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="center brand-logo">TITLE</a>
+                <ul class="right">
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">event</i></a></li>
+                </ul>
+                <ul class="left">
+                    <li><a href="#!" ><i class="material-icons">menu</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    <div id="map"></div>
+
+    <div id="search">
+        <div class="search--inner">
+            <input id="input" type="text" name="" placeholder="Search..." value="">
+            <div class="search--more">
+                <button id="btn-more" class="btn-flat">MORE</button>
+                <button id="btn-resetSearch" class="btn-flat">RESET</button>
+            </div>
+            <div><br>
+                <span class="more_tags uppercase white-text badge blue ">#escalation</span>
+                <span class="more_tags uppercase white-text badge red">#party</span>
+                <span class="more_tags uppercase white-text badge yellow">#music</span>
+                <span class="more_tags uppercase white-text badge green">#action</span>
+                <span class="more_tags uppercase white-text badge grey">#sport</span>
+                <span class="more_tags uppercase white-text badge black">#adventure</span>
+                <span class="more_tags uppercase white-text badge pink">#nature</span>
+                <span class="more_tags uppercase white-text badge orange">#kids</span>
+                <span class="more_tags uppercase white-text badge purple">#education</span>
+                <span class="more_tags uppercase white-text badge indigo">#social</span>
+                <span class="more_tags uppercase white-text badge teal">#talk</span>
             </div>
         </div>
+    </div>
 
-        <div id="range--div" class="range-field">
-            <input type="range" id="range" min="23" max="29" value="23" />
-            <span id="range--value">HEUTE</span>
-        </div>
-
-        <a class="btn-floating btn-large waves-effect waves-light blue" id="fab"><i id="fab--i" class="material-icons">search</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light blue" id="fab"><i id="fab--i" class="material-icons">search</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light red" id="add"><i id="add--i" class="material-icons">add</i></a>
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="swagmarker.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
     <script src="search.js" charset="utf-8"></script>
