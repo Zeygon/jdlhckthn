@@ -106,7 +106,7 @@ function get_color(cat) {
             return 'orange';
         case 'gaming':
             return 'silver';
-        case 'eating'
+        case 'eating':
             return 'palevioletred';
         default:
             return 'black';
