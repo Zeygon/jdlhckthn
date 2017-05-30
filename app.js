@@ -71,4 +71,4 @@ function createPoint(marker) {
 $('#brand').fadeIn(300);
 setTimeout(function(){
   $('#loader').fadeOut(500);
-},1500);
+},2000);

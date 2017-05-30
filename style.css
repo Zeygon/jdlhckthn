@@ -210,7 +210,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 
 #brand{
   display: none;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 input[type="search"] {
