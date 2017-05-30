@@ -219,7 +219,6 @@
       ],
       "creator": "tom"
     },
-
     {
       "id": 44558,
       "name": "Wat",
@@ -239,6 +238,27 @@
       "coordinates": [
         50.77940353390704,
         6.063251495361329
+      ]
+    },
+    {
+      "id": 18710,
+      "name": "Joggen gehen",
+      "date": "TBD",
+      "coord": [],
+      "description": "sehr viel joggen",
+      "location": "Könighügel",
+      "tags": [
+        "2"
+      ],
+      "category": "1",
+      "maxusers": "12",
+      "users": [
+        "admin"
+      ],
+      "creator": "admin",
+      "coordinates": [
+        50.77864372789816,
+        6.0692596435546875
       ]
     }
   ]
