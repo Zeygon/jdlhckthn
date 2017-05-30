@@ -121,7 +121,7 @@
       ],
       "description": "Spontaneous activity for playing Billard tonight",
       "location": "Billard Café Lichthof",
-      "category": "freetime activity",
+      "category": "leisure activity",
       "tags": [
         "billard",
         "pub",
@@ -167,7 +167,7 @@
       ],
       "description": "We need some more players for this cool bowling evening. Come join us!",
       "location": "Bowlo",
-      "category": "freetime activity",
+      "category": "leisure activity",
       "tags": [
         "bowling"
       ],
@@ -209,10 +209,10 @@
       ],
       "description": "I'm so hyped for the new mummy-movie, want to watch it with me?",
       "location": "Cineplex",
-      "category": "freetime activity",
+      "category": "leisure activity",
       "tags": [
         "movies",
-        ""
+        "swimming"
       ],
       "maxusers": 20,
       "users": [

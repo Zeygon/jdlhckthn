@@ -7,7 +7,7 @@ var $fabi = $('#fab--i');
 var $input = $('#input');
 var $rangeslider = $('#range');
 var $btnMore = $('#btn-more');
-
+var activitis= L.layerGroup();
 var $create = $('#create');
 var $add = $('#add');
 var search_points = L.layerGroup();
@@ -63,26 +63,31 @@ $searchReset.click(function (e) {
 
 function resetMap() {
     map.removeLayer(activities);
+    console.log("activities removed");
+    map.removeLayer(activitis);
+    console.log("activitis removed");
 }
 
 $input.keypress(function (e) {
     //enter key
     if (e.which == 13) {
+        resetMap();
         searchPoints($input.val());
+
     }
 });
 
 function searchPoints(searchString) {
-    map.removeLayer(search_points);
     search_points = L.layerGroup();
     var searchCount = 0;
     var specificPoints= $.ajax({
       url:'activities.json',
       async: false
    }).responseJSON;
-    resetMap();
+
     for (var i = 0; i < specificPoints.marker.length; i++) {
         for (var tagCount = 0; tagCount < specificPoints.marker[i].tags.length; tagCount++) {
+          alert("lala");
             if (searchString.includes(specificPoints.marker[i].tags[tagCount])) {
                 search_points.addLayer(createPoint(specificPoints.marker[i]));
                 searchCount++;
@@ -102,12 +107,14 @@ function searchPoints(searchString) {
 //Suche
 
 var tosearch;
-var found;
+var newlayer=L.layerGroup();
 $("#search").keyup(function(event) {
     if (event.keyCode == 13) {
         resetMap();
+        activitis.clearLayers();
         tosearch=$("#search").val();
-              console.log(tosearch);
+        $("#search").val('');
+        console.log(tosearch);
         $.getJSON('activities.json', function (d){
           console.log("get json search");
           data = d.activities;
@@ -120,9 +127,12 @@ $("#search").keyup(function(event) {
             console.log(data[data_count].users.length + "   " + data[data_count].maxusers);
             if(data[data_count].tags[tag_count] === tosearch && data[data_count].users.length < data[data_count].maxusers){
               console.log("if ist true!!!!!!!!!!");
-              createPoint(data[data_count]).addTo(map);
+              activitis.addLayer(createPoint(data[data_count]));
+              console.log("add to map" + data[data_count].name);
+
             }
           }
+          activitis.addTo(map);
         }
 
     }

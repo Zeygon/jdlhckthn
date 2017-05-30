@@ -63,7 +63,7 @@ function createPoint(marker) {
         case 'programming' :
           var point = L.marker(marker.coordinates, { icon: yellowIcon }).bindPopup(marker_content);
           break;
-        case 'freetime activity' :
+        case 'leisure activity' :
           var point = L.marker(marker.coordinates, { icon: violetIcon }).bindPopup(marker_content);
           break;
         case 'gaming' :
