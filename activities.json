@@ -3,14 +3,14 @@
             "id":1,
             "name": "LaserTag Aachen",
             "date": "",
-            "coordinates": [50.7759468,6.0751952],
+            "coordinates": [50.7914234,6.1197013],
             "description": "Me and my friends want to play LaserTag this weekend and need some more people",
             "location": "Bajuwarenring 7",
-            "Category":"Sport",
+            "category":"sport",
             "tags": ["Anfänger", "schwimmen"],
-            "maxsusers": 8,
+            "maxusers": 8,
             "users": ["luca", "chris", "lukas"],
-            "creator": "chris",
+            "creator": "chris"
         },
         {
             "id":2,
@@ -22,7 +22,7 @@
             "tags": ["swimming","indoor"],
             "maxusers": 4,
             "users": ["leon"],
-            "creator": "leon",
+            "creator": "leon"
         },
         {
             "id":3,
@@ -35,7 +35,7 @@
             "tags": ["homework", "maths"],
             "maxusers": 3,
             "users": ["oliver"],
-            "creator": "oliver",
+            "creator": "oliver"
         },
         {
             "id":4,
@@ -48,7 +48,7 @@
             "tags": ["outdoor", "climibing"],
             "maxusers": 8,
             "users": ["alena"],
-            "creator": "alena",
+            "creator": "alena"
         },
         {
             "id":5,
@@ -61,7 +61,7 @@
             "tags": ["development", "coding", "web"],
             "maxusers": 2,
             "users": ["marc"],
-            "creator": "marc",
+            "creator": "marc"
         },
         {
             "id":6,
@@ -74,7 +74,7 @@
             "tags": ["billard", "pub", "bar"],
             "maxusers": 4,
             "users": ["ina","fabian"],
-            "creator": "ina",
+            "creator": "ina"
         },
         {
             "id":7,
@@ -87,7 +87,7 @@
             "tags": ["shooter", "playing"],
             "maxusers": 8,
             "users": ["frank", "michael", "richard"],
-            "creator": "frank",
+            "creator": "frank"
         },
         {
             "id":8,
@@ -100,7 +100,7 @@
             "tags": ["bowling"],
             "maxusers": 6,
             "users": ["julian","sven"],
-            "creator": "julian",
+            "creator": "julian"
         },
         {
             "id":9,
@@ -113,7 +113,7 @@
             "tags": ["sushi", "dinner"],
             "maxusers": 8,
             "users": ["caroline"],
-            "creator": "caroline",
+            "creator": "caroline"
         },
         {
             "id":10,
@@ -126,7 +126,7 @@
             "tags": ["movies", ""],
             "maxusers": 20,
             "users": ["tom"],
-            "creator": "tom",
+            "creator": "tom"
         }
     ]
 }
