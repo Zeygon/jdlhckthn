@@ -1,13 +1,12 @@
 {
     "activities": [{
+            "id":1,
             "name": "LaserTag Regensburg",
             "date": "30.05.2017 ",
             "coordinates": [48.996385, 12.120117],
             "description": "Have fun playing LaserTag on 450 m². LASER TAG is probably the most exciting live game that simulates an actual battlefield. n a more technical definition, LASER TAG is a team or individual activity that involves the use of hand-held infrared-emitting targeting device. So this means no pain as targeting or shooting is done via light or simply put, laser. Make sure to call us before your visit so that you can book it.",
             "location": "Bajuwarenring 7",
             "tags": ["#action", "#sport"],
-            "color": "",
-            "typ": "activity",
             "maxsusers": 8,
             "users": ["luca", "chris", "lukas"],
             "creator": "chris",
