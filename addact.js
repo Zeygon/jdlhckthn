@@ -117,6 +117,27 @@ var save = function() {
         }
     });
 
+
+    name = '';
+    date = '';
+    date_tbd = '';
+    location = '';
+    description = '';
+    category = '';
+    tags = '';
+    spots = '';
+    spots_limited = '';
+
+    $('#input_title').val("");
+    $('#input_date').val("");
+    $('#input_date_tbd').val(on);
+    $('#input_location').val("");
+    $('#input_description').val("");
+    $('#input_category').val("");
+    $('#input_tags').val([]);
+    $('#input_spots').val(0);
+    $('#input_spots_limited').val(on);
+
 }
 
 map.on('click', function(e) {
