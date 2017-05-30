@@ -44,7 +44,9 @@ function createPoint(marker) {
     for(var usr_count = 0; usr_count <marker.users.length; usr_count++){
       marker_content += '<span class="user" >' + " " + marker.users[usr_count] + ", " ;
     }
-    marker_content += '</span>'
+    marker_content += '<br><br>';
+    marker_content += '<center>'+'<button class="button arrow"><hjoin style="color:#ffffff">Join in!</hjoin>'+'</button>'+'</center>';
+    marker_content += '</span>';
     //farbe
     if(marker.users.length<marker.maxusers){
       console.log("lala");
