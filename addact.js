@@ -137,3 +137,7 @@ var getCoordinates = function() {
     Materialize.toast('Pick a location by tapping on it', 2000)
     wait_for_latlng = true;
 }
+
+var abort = function() {
+    console.log("TODO: abort");
+}
