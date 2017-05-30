@@ -78,7 +78,7 @@ function createPoint(marker) {
         marker_content += '<span class="user" >' + " " + marker.users[usr_count] + ", ";
     }
     marker_content += '<br><br>';
-    marker_content += '<center>' + '<button class="button arrow"><hjoin style="color:#ffffff">Join in!</hjoin>' + '</button>' + '</center>';
+    marker_content += '<center>' + '<button onclick="join(' + marker.id + ')" class="button arrow"><hjoin style="color:#ffffff">Join in!</hjoin>' + '</button>' + '</center>';
     marker_content += '</span>';
     //farbe
     if(marker.users.length<marker.maxusers){
