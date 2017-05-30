@@ -26,7 +26,6 @@ $btnMore.click(function(e) {
 
 var b = false;
 $add.click(function (e) {
-  console.log("Hi");
     if (b) {
         $create.fadeOut(500);
         $fabi.text("search");
