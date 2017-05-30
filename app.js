@@ -43,6 +43,7 @@ function createPoint(marker) {
     for(var usr_count = 0; usr_count <marker.users.length; usr_count++){
       marker_content += '<span class="user" >' + " " + marker.users[usr_count] + ", " ;
     }
+    marker_content += '</span>'
     //farbe
     switch (marker.category){
       case 'sport' :
@@ -55,7 +56,7 @@ function createPoint(marker) {
         var point = L.marker(marker.coordinates, { icon: yellowIcon }).bindPopup(marker_content);
         break;
       case 'freetime activity' :
-        var point = L.marker(marker.coordinates, { icon: greenIcon }).bindPopup(marker_content);
+        var point = L.marker(marker.coordinates, { icon: redIcon }).bindPopup(marker_content);
         break;
       case 'gaming' :
         var point = L.marker(marker.coordinates, { icon: orangeIcon }).bindPopup(marker_content);
