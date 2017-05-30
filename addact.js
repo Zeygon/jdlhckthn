@@ -2,7 +2,7 @@ var save = function() {
     console.log("TODO: save");
 
     var d = {
-        id: 0,
+        id: Math.floor((Math.random() * 100000) + 1),
         name: "",
         date: "",
         coord: [],
@@ -11,8 +11,8 @@ var save = function() {
         tags: [],
         category: "",
         maxusers: 0,
-        users: [],
-        creator: ""
+        users: ["admin"],
+        creator: "admin"
     }
 
     var name = $('#input_title').val();
@@ -96,5 +96,8 @@ var save = function() {
     }
 
     console.log(d);
+
+    var j = JSON.stringify(d);
+    console.log(j);
 
 }
