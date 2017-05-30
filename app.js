@@ -15,7 +15,10 @@ $.getJSON('activities.json', function (d){
   data = d.activities;
   dataToMap();
 })
+
   console.log("own point");
+
+
 var dataToMap = function(){
     console.log("datatomap");
   for (var i = 0;i<data.length;i++){
