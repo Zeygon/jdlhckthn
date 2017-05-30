@@ -7,6 +7,8 @@ var p26 = L.layerGroup();
 var p27 = L.layerGroup();
 var p28 = L.layerGroup();
 var p29 = L.layerGroup();
+var activities = L.layerGroup();
+var data;
 
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -15,61 +17,34 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 //own point
 L.marker([50.7790,6.06028],{ icon: headIcon }).addTo(map);
 
-$.getJSON('23.json', function (data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        p23.addLayer(createPoint(data.marker[i]));
-    }
-    p23.addTo(map);
-});
+var dataToMap = function(){
+  for (var i = 0;i<data.length;i++){
+    activities.addLayer(createPoint(data[i]));
+  }
+  activities.addTo(map);
+}
 
-$.getJSON('24.json', function (data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        p24.addLayer(createPoint(data.marker[i]));
-    }
-});
-
-$.getJSON('25.json', function (data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        p25.addLayer(createPoint(data.marker[i]));
-    }
-});
-
-$.getJSON('26.json', function (data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        p26.addLayer(createPoint(data.marker[i]));
-    }
-});
-
-$.getJSON('27.json', function (data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        p27.addLayer(createPoint(data.marker[i]));
-    }
-});
-
-$.getJSON('28.json', function (data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        p28.addLayer(createPoint(data.marker[i]));
-    }
-});
-
-$.getJSON('29.json', function (data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        p29.addLayer(createPoint(data.marker[i]));
-    }
-});
+$.getJSON('activities.json', function (d){
+  data = d.activities;
+  dataToMap();
+})
 
 function createPoint(marker) {
-    var marker_content = '<h4 class="center" style="margin:0;">' + marker.name + '</h4><br><b>' + marker.opening + ' &bull; ' + marker.address + '</b><br>' + marker.description + "<br><p>";
-    for (var tag_count = 0; tag_count < marker.tags.length; tag_count++) {
-        marker_content += '<span class="uppercase white-text badge ' + get_color(marker.tags[tag_count]) + '">';
-        marker_content += marker.tags[tag_count] + "</span>";
+    var marker_content = '<h4 class="center" style="margin:0;">' + marker.name + '</h4><br><b>' + marker.location + '</b><br>' + marker.description + "<br><p>";
+    for (var tag_count = 0; tag_count < marker.category.length; cat_count++) {
+        marker_content += '<span class="uppercase white-text badge ' + get_color(marker.category[cat_count]) + '">';
+        marker_content += marker.category[cat_count] + "</span>";
     }
-    marker_content += '</p><br><br><i class="material-icons tiny" style="vertical-align: middle;">phone</i> ' + marker.phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i> ' + marker.url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i> ' + marker.email;
-    if (marker.typ === "event") {
+
+    marker_content += '</p><br><br><i class="material-icons tiny" style="vertical-align: middle;">group</i> ' + marker.maxusers;
+    for(var usr_count = 0; usr_count <marker.users.length; usr_count++){
+      marker_content += '<span class="users" ' + marker.users[i];
+    }
+    /*if (marker.typ === "event") {
         var point = L.marker(marker.coordinates, { icon: greenIcon }).bindPopup(marker_content);
     } else {
         var point = L.marker(marker.coordinates, { icon: redIcon }).bindPopup(marker_content);
-    }
+    }*/
 
     return point;
 }
@@ -112,7 +87,7 @@ function get_color(cat) {
             return 'black';
     }
 }
-
+/*
 var rangeSlider = function () {
     var slider = $('#range--div'),
         range = $('#range'),
@@ -144,7 +119,7 @@ var rangeSlider = function () {
 };
 
 rangeSlider();
-
+*/
 $('#brand').fadeIn(300);
 setTimeout(function(){
   $('#loader').fadeOut(500);
