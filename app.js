@@ -1,4 +1,4 @@
-var map = L.map('map').setView([49.003008, 12.098255], 13);
+var map = L.map('map').setView([50.7790,6.06028], 15);
 var all_points = L.layerGroup();
 var p23 = L.layerGroup();
 var p24 = L.layerGroup();
@@ -13,7 +13,7 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 }).addTo(map);
 
 //own point
-L.marker([49.00316, 12.09751],{ icon: headIcon }).addTo(map);
+L.marker([50.7790,6.06028],{ icon: headIcon }).addTo(map);
 
 $.getJSON('23.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
