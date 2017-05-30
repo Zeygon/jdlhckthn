@@ -1,0 +1,10 @@
+{
+  "users":[{
+    "id":0,
+    "Vorname":"Max",
+    "Nachname":"Mustermann",
+    "Username":"mamu",
+    "ownedact":[1,2,3],
+    "joindact":[1,2,3,6,8],
+    }]
+}

@@ -21,7 +21,7 @@
             "category": "sport",
             "tags": ["swimming","indoor"],
             "maxusers": 4,
-            "users": ["leon"],
+            "users": ["leon","chris","luca","lukas"],
             "creator": "leon"
         },
         {
