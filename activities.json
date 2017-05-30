@@ -10,6 +10,6 @@
             "typ": "activity",
             "maxsusers": 8,
             "users": ["luca", "chris", "lukas"],
-            "creator": "chris",    
+            "creator": "chris",
         }]
 }
