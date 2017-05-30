@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-var map = L.map('map').setView([50.778925, 6.060329], 13);
-=======
 var map = L.map('map').setView([50.7790,6.06028], 15);
->>>>>>> master
 var all_points = L.layerGroup();
 var p23 = L.layerGroup();
 var p24 = L.layerGroup();
