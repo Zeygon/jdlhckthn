@@ -1,12 +1,4 @@
 var map = L.map('map').setView([50.7790,6.06028], 15);
-var all_points = L.layerGroup();
-var p23 = L.layerGroup();
-var p24 = L.layerGroup();
-var p25 = L.layerGroup();
-var p26 = L.layerGroup();
-var p27 = L.layerGroup();
-var p28 = L.layerGroup();
-var p29 = L.layerGroup();
 var activities = L.layerGroup();
 var data;
 
@@ -17,6 +9,11 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 //own point
 L.marker([50.7790,6.06028],{ icon: headIcon }).addTo(map);
 
+$.getJSON('activities.json', function (d){
+  data = d.activities;
+  dataToMap();
+})
+
 var dataToMap = function(){
   for (var i = 0;i<data.length;i++){
     activities.addLayer(createPoint(data[i]));
@@ -24,17 +21,18 @@ var dataToMap = function(){
   activities.addTo(map);
 }
 
-$.getJSON('activities.json', function (d){
-  data = d.activities;
-  dataToMap();
-})
+
 
 function createPoint(marker) {
     var marker_content = '<h4 class="center" style="margin:0;">' + marker.name + '</h4><br><b>' + marker.location + '</b><br>' + marker.description + "<br><p>";
-    for (var tag_count = 0; tag_count < marker.category.length; cat_count++) {
-        marker_content += '<span class="uppercase white-text badge ' + get_color(marker.category[cat_count]) + '">';
-        marker_content += marker.category[cat_count] + "</span>";
-    }
+    marker_content += '<span class="uppercase white-text badge">';
+    for (var tag_count = 0; tag_count < marker.tag.length; tag_count++) {
+      marker_content += marker.tag[tag_count];
+      /*
+        marker_content += '<span class="uppercase white-text badge ' + get_color(marker.category) + '">';
+        marker_content += marker.tag[tag_count] + "</span>";
+    */}
+    marker_content += "</span>";
 
     marker_content += '</p><br><br><i class="material-icons tiny" style="vertical-align: middle;">group</i> ' + marker.maxusers;
     for(var usr_count = 0; usr_count <marker.users.length; usr_count++){
