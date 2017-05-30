@@ -94,30 +94,20 @@ function createPoint(marker) {
 //     all_points.addTo(map);
 // });
 
-function get_color(tag) {
-    switch (tag) {
-        case '#escalation':
-            return 'blue';
-        case '#party':
-            return 'red';
-        case '#music':
-            return 'yellow';
-        case '#action':
-            return 'green';
-        case '#sport':
-            return 'grey';
-        case '#adventure':
-            return 'black';
-        case '#nature':
-            return 'pink';
-        case '#kids':
+function get_color(cat) {
+    switch (cat) {
+        case 'sport':
+            return 'seagreen';
+        case 'learning':
+            return 'maroon';
+        case 'programming':
+            return 'royalblue';
+        case 'freetime activity':
             return 'orange';
-        case '#education':
-            return 'purple';
-        case '#social':
-            return 'indigo';
-        case '#talk':
-            return 'teal';
+        case 'gaming':
+            return 'silver';
+        case 'eating'
+            return 'palevioletred';
         default:
             return 'black';
     }
