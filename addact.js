@@ -91,8 +91,15 @@ var save = function() {
             console.log("No spots provided");
             return;
         } else {
-          d.maxusers = spots;
+            d.maxusers = spots;
         }
+    }
+
+    if (latlng === []) {
+        console.log("No tags provided");
+        return;
+    } else {
+        d.coordinates = latlng;
     }
 
     console.log(d);
@@ -100,6 +107,35 @@ var save = function() {
     var j = JSON.stringify(d);
     console.log(j);
 
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:3000/activities",
+        data: j,
+        contentType: 'application/json',
+        success: function(data) {
+            console.log("wat: " + data);
+        }
+    });
+
+}
+
+map.on('click', function(e) {
+    console.log("Lat: " + e.latlng.lat + ", Lon: " + e.latlng.lng);
+    if (wait_for_latlng === true) {
+        latlng = [e.latlng.lat, e.latlng.lng];
+        $('#create').fadeIn(300);
+        wait_for_latlng = false;
+    }
+
+});
+
+var latlng = [];
+var wait_for_latlng = false;
+
+var getCoordinates = function() {
+    $('#create').fadeOut(300);
+    Materialize.toast('Pick a location by tapping on it', 2000)
+    wait_for_latlng = true;
 }
 
 var abort = function() {

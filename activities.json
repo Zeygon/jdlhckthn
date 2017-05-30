@@ -12,8 +12,8 @@
       "location": "Black LaserTag",
       "category": "sport",
       "tags": [
-        "Anfänger",
-        "swimming"
+        "action",
+        "teamsport"
       ],
       "maxusers": 8,
       "users": [
@@ -221,22 +221,46 @@
       "creator": "tom"
     },
     {
-      "id": 11092,
-      "name": "Test",
+      "id": 44558,
+      "name": "Wat",
       "date": "TBD",
-      "coord": [],
-      "description": "ffff",
-      "location": "wo",
+      "description": "ddd",
+      "location": "dd",
       "tags": [
-        "2",
-        "3"
+        "1",
+        "2"
       ],
       "category": "1",
-      "maxusers": "55",
+      "maxusers": "4",
       "users": [
         "admin"
       ],
-      "creator": "admin"
+      "creator": "admin",
+      "coordinates": [
+        50.77940353390704,
+        6.063251495361329
+      ]
+    },
+    {
+      "id": 18710,
+      "name": "Joggen gehen",
+      "date": "TBD",
+      "coord": [],
+      "description": "sehr viel joggen",
+      "location": "Könighügel",
+      "tags": [
+        "2"
+      ],
+      "category": "1",
+      "maxusers": "12",
+      "users": [
+        "admin"
+      ],
+      "creator": "admin",
+      "coordinates": [
+        50.77864372789816,
+        6.0692596435546875
+      ]
     }
   ]
 }

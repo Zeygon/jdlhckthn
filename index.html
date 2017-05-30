@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,7 +36,7 @@
 
 
 
-        <nav class="orange">
+        <nav class="orange" style="background-color:#ffc018 !important">
             <div class="nav-wrapper">
                 <div class="row">
                     <div class="col s2">
@@ -90,7 +92,7 @@
                                 <label for="input_location">Location</label>
                             </div>
                             <div class="input-field col s4">
-                                <button type="button" name="button" class="waves-effect waves-light btn">PICK</button>
+                                <button type="button" name="button" class="waves-effect waves-light btn" onclick="getCoordinates()">PICK</button>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
