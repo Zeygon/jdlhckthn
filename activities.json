@@ -5,8 +5,13 @@
             "date": "",
             "coordinates": [50.7914234,6.1197013],
             "description": "Me and my friends want to play LaserTag this weekend and need some more people",
+<<<<<<< HEAD
+            "location": "Bajuwarenring 7",
+            "category":"Sport",
+=======
             "location": "Black LaserTag",
             "category":"sport",
+>>>>>>> 5727efa9ce8c144c750c7f5e223c1eaaf90b444e
             "tags": ["Anfänger", "schwimmen"],
             "maxusers": 8,
             "users": ["luca", "chris", "lukas"],

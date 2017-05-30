@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src  *; style-src *; script-src *" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src  *; style-src *; script-src *" /> -->
     <title>GONNAGO</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
@@ -63,13 +63,81 @@
 
     <div id="map"></div>
 
-    <div id="create" class="row">
-        <div class="container">
-          <div class="col s12">
-            <div class="card-panel">
-              <h1>duh</h1>
+    <div id="create">
+        <div class="row">
+            <div class="container">
+                <div class="col s12">
+                    <form class="card-panel">
+                        <h1>Add Event</h1>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">title</i>
+                                <input id="input_title" type="text" class="validate" required>
+                                <label for="input_title">Title</label>
+                            </div>
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix">date_range</i>
+                                <input type="date" class="datepicker" id="input_date" required>
+                                <label for="input_date">Select date</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="checkbox" class="filled-in" id="input_date_tbd" checked="checked" />
+                                <label for="input_date_tbd">TBD</label>
+                            </div>
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix">add_location</i>
+                                <input id="input_location" type="text" class="validate" required>
+                                <label for="input_location">Location</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <button type="button" name="button" class="waves-effect waves-light btn">PICK</button>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="input_description" class="materialize-textarea" required></textarea>
+                                <label for="input_description">Description</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <select id="input_category" required>
+                                   <option value="" disabled selected>Choose your option</option>
+                                   <option value="1">Sports</option>
+                                   <option value="2">Coding</option>
+                                   <option value="3">Freetime Activities</option>
+                                 </select>
+                                <label>Select category</label>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <select multiple id="input_tags" required>
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">swim</option>
+                                  <option value="2">walk</option>
+                                  <option value="3">hide</option>
+                                </select>
+                                <label>Select tags</label>
+                            </div>
+
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix">date_range</i>
+                                <input type="text" class="text" id="input_spots">
+                                <label for="inpit_spots">Maximum spots</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="checkbox" class="filled-in" id="input_spots_limited" checked="checked" />
+                                <label for="input_spots_limited">spots limited</label>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                          <div class="right abort"><button class="btn waves-effect waves-light green" onclick="save()" type="submit">Save</button></div>
+                          <div class="right"><button class="btn waves-effect waves-light red" onclick="abort()">Abort</button></div>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
