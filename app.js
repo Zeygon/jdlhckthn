@@ -80,11 +80,10 @@ function createPoint(marker) {
     for (var tag_count = 0; tag_count < marker.tags.length; tag_count++) {
         marker_content += '<span class="new badge uppercase red" data-badge-caption="" style="margin-top:5px;">' + marker.tags[tag_count] +'</span>'
     }
-
     marker_content += '</div><br><br>';
-    marker_content += '<center>' + '<button class="button arrow"><hjoin style="color:#ffffff">Join in!</hjoin>' + '</button>' + '</center>';
+    marker_content += '<center>' + '<button onclick="join(' + marker.id + ')" class="button arrow"><hjoin style="color:#ffffff">Join in!</hjoin>' + '</button>' + '</center>';
     marker_content += '</span></div>';
-    //farbe
+    //arbe
     if(marker.users.length<marker.maxusers){
       console.log("lala");
       switch (marker.category){
