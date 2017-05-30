@@ -1,0 +1,68 @@
+{
+    "marker": [{
+            "name": "LaserTag Regensburg",
+            "opening": "Daily &bull; 10.00 AM to 12 PM",
+            "coordinates": [48.996385, 12.120117],
+            "description": "Have fun playing LaserTag on 450 m². LASER TAG is probably the most exciting live game that simulates an actual battlefield. n a more technical definition, LASER TAG is a team or individual activity that involves the use of hand-held infrared-emitting targeting device. So this means no pain as targeting or shooting is done via light or simply put, laser. Make sure to call us before your visit so that you can book it.",
+            "address": "Bajuwarenring 7",
+            "phone": "0941 38162512",
+            "email": "info@lasertag-regensburg.de",
+            "url": "www.lasertag-deutschland.com",
+            "tags": ["#action", "#sport"],
+            "color": "",
+            "typ": "activity"
+        },
+        {
+            "name": "Sailplane",
+            "opening": "Saturdays & Sundays &bull; 09.00 AM to 6.00 PM",
+            "coordinates": [49.054912, 12.076534],
+            "description": "You want to fly over Regensburg with a sailplane? Contact us per mail.",
+            "address": "Eichendorffstr. 42, 93138 Lappendorf",
+            "phone": "094537244",
+            "email": "mitflug@luftsportverein-regensburg.de",
+            "url": "www.luftsportverein-regensburg.de",
+            "tags": ["#adventure", "#sport"],
+            "color": "",
+            "typ": "activity"
+        },
+        {
+            "name": "Carolus Thermen",
+            "coordinates": [50.78309, 6.09693],
+            "description": "The Carolus Thermen Bad Aachen with their four worlds of relaxation offer unique possibilities of letting yourself go for a few hours.",
+            "opening": "Daily &bull; 9.00 AM to 11.00 PM",
+            "address": "Blondelstraße 7",
+            "phone": "0241 182740",
+            "email": "mail@carolus-thermen.de",
+            "url": " www.carolus-thermen.de",
+            "tags": ["#sport", "#chilling"],
+            "color": "",
+            "typ": "event"
+        },
+        {
+            "name" : "Indoor Climbing Wall",
+            "opening" : "Monday to Wednesday &bull; 10.00 AM - 11.00 PM | Thursday &bull; 9.00 AM - 11.00 PM | Friday &bull; 10.00am - 11.00pm | Saturday to Sunday &bull: 10.00 AM - 10.00 PM",
+            "coordinates" : [49.042653, 12.086079],
+            "description" : "The DAV Kletterzentrum Regensburg offers around ca. 2300 sq m climbing space in total (1.400 sq m indoor & 900 sq m outdoors), climbing-routes from 3rd to 10th skilllevel and wall-height of 14,50m",
+            "address" : "Am Silbergarten 6, 93138 Lappersdorf/Kareth",
+            "phone" : "0941 28005085",
+            "email" : "service@kletterzentrum-regensburg.de",
+            "url" : "http://www.kletterzentrum-regensburg.de/",
+            "tags" : ["#sport"],
+            "color" : "",
+            "typ" : "activity"
+        },
+        {
+            "name" : "Les Infants Terribles (opera)",
+            "opening" : "Saturday &bull, April 24, 7.30 PM",
+            "coordinates" : [49.019129, 12.089759],
+            "description" : "Dance Opera by Philip Glass. Director Yuki Mori choreographed and staged a project between dance and music theater with the opera 'Les Enfants Terribles'.",
+            "address" : "Theater Regensburg - Bismarckplatz 7 93047 Regensburg",
+            "phone" : "0941 5072424",
+            "email" : "karten@theaterregensburg.de",
+            "url" : "https://www.theater-regensburg.de",
+            "tags" : ["#opera","#culture"],
+            "color" : "",
+            "typ" : "event"
+        }
+    ]
+}
