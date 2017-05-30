@@ -362,3 +362,23 @@ border-radius: 4px;
 .abort{
   padding-left: 10px;
 }
+
+
+#dropdown1{
+  min-width: 400px;
+}
+
+.dd-span{
+  display:inline-flex;
+  line-height:64px;
+  margin-top:0;
+  margin-bottom: 0;
+  color: #333;
+}
+.dd-span > i{
+  color: #333;
+}
+.dd-flex{
+  display: flex;
+  justify-content: space-around;
+}
