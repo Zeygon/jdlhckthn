@@ -209,8 +209,12 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 
 #brand{
-  display: none;
-  margin-top: 50px;
+  margin-top: 10%;
+}
+
+#brand > h1{
+  padding-top: 10%;
+  font-size: 400%;
 }
 
 input[type="search"] {
