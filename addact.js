@@ -105,6 +105,3 @@ var save = function() {
 var abort = function() {
     console.log("TODO: abort");
 }
-setTimeout(function(){
-  $('#loader').fadeOut(500);
-},2000);
