@@ -13,8 +13,8 @@ function join(ide) {
             console.log("---");
             var j = JSON.stringify(data[i]);
             $.ajax({
-                type: "INSERT",
-                url: "http://localhost:8080/activities",
+                type: "PUT",
+                url: "http://localhost:8080/activities/"+data.id,
                 data: j,
                 contentType: 'application/json',
                 success: function(data) {
