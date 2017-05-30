@@ -85,39 +85,6 @@ function get_color(cat) {
             return 'black';
     }
 }
-/*
-var rangeSlider = function () {
-    var slider = $('#range--div'),
-        range = $('#range'),
-        value = $('#range--value');
-
-    slider.each(function () {
-
-        value.each(function () {
-            var value = $(this).prev().attr('value');
-            if (value === "23") {
-                $(this).html("TODAY");
-
-            } else {
-
-                $(this).html(value + ". April");
-            }
-        });
-
-        range.on('input', function () {
-            if (this.value === "23") {
-                $(this).next(value).html("TODAY");
-            } else {
-
-                $(this).next(value).html(this.value + ". April");
-            }
-
-        });
-    });
-};
-
-rangeSlider();
-*/
 $('#brand').fadeIn(300);
 setTimeout(function(){
   $('#loader').fadeOut(500);

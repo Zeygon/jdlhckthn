@@ -21,7 +21,7 @@ body {
 }
 
 #create {
-  
+    padding-top: 80px;
     position: fixed;
     top: 0;
     left: 0;

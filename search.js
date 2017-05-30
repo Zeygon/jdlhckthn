@@ -8,6 +8,8 @@ var $input = $('#input');
 var $rangeslider = $('#range');
 var $btnMore = $('#btn-more');
 
+var $create = $('#create');
+var $add = $('#add');
 var search_points = L.layerGroup();
 //var allPoints;
 
@@ -23,17 +25,15 @@ $btnMore.click(function(e) {
 });
 
 var b = false;
-$searchTrigger.click(function (e) {
+$add.click(function (e) {
+  console.log("Hi");
     if (b) {
-        $searchOverlay.fadeOut(500);
+        $create.fadeOut(500);
         $fabi.text("search");
         b = false;
     } else {
 
-        $searchOverlay.fadeIn(500);
-        setTimeout(function () {
-            $search.focus();
-        }, 500);
+        $create.fadeIn(500);
         $fabi.text("arrow_back");
 
         b = true;
@@ -41,7 +41,7 @@ $searchTrigger.click(function (e) {
 });
 
 $searchReset.click(function (e) {
-    getCorrectLayer(activities));
+    getCorrectLayer(activities);
     $searchOverlay.fadeOut(500);
     $fabi.text("search");
     $input.val("");
