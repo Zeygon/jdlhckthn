@@ -114,6 +114,7 @@ var save = function() {
         contentType: 'application/json',
         success: function(data) {
             console.log("wat: " + data);
+            Materialize.toast('New activity ' + data.name + " added!", 3000) 
         }
     });
 
@@ -130,13 +131,15 @@ var save = function() {
 
     $('#input_title').val("");
     $('#input_date').val("");
-    $('#input_date_tbd').val(on);
+    $('#input_date_tbd').val(true);
     $('#input_location').val("");
     $('#input_description').val("");
     $('#input_category').val("");
     $('#input_tags').val([]);
     $('#input_spots').val(0);
-    $('#input_spots_limited').val(on);
+    $('#input_spots_limited').val(true);
+
+    $('#create').fadeOut(300);
 
 }
 
