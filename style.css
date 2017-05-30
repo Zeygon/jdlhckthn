@@ -20,7 +20,7 @@ body {
     width: 100%;
 }
 
-#search {
+#create {
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
@@ -78,8 +78,8 @@ body {
 
 #add {
     position: fixed;
-    bottom: 120px;
-    right: 40px;
+    bottom: 36px;
+    right: 36px;
     z-index: 4000;
 }
 
@@ -211,4 +211,49 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 #brand{
   display: none;
   margin-top: 200px;
+}
+
+input[type="search"] {
+height: 48px !important; /* or height of nav */
+margin-top: 8px;
+border-radius: 4px;
+}
+
+.p0{
+  padding: 0!important;
+}
+
+@media only screen and (max-width: 600px){
+  #search{
+
+  height: 44px !important; /* or height of nav */
+  margin-top: 6px;
+}
+}
+#search{
+  padding-left: 40px;
+  padding-right: -40px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none!important;
+}
+
+#search:focus{
+  background: rgba(255, 255, 255, 0.95);
+  border: none!important;
+  color: #333;
+
+}
+
+.searchicon{
+  line-height: 48px!important;
+}
+.searchnav{
+  width: 100%;
+  max-width: 900px;
+}
+
+
+
+.nav-wrapper > .row > .col{
+  padding: 0!important;
 }
