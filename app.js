@@ -51,7 +51,7 @@ var dataToMap = function() {
         mylist += myact[i].date;
         mylist += '</span><span class="dd-span"> <i class="material-icons">supervisor_account</i>';
         mylist += myact[i].users.length + "/" + myact[i].maxusers;
-        mylist += '</span></div><a href="#modal1" class="waves-effect waves-light btn blue">Goto chat</a></div></div></li><li class="divider"></li>';
+        mylist += '</span></div><a href="#modal1" onclick="setTimeout(function(){$(\'.shockingreveal\').fadeIn(300);},5000)" class="waves-effect waves-light btn blue">Goto chat</a></div></div></li><li class="divider"></li>';
     }
     $('#dropdown1').html(mylist);
     activities.addTo(map);

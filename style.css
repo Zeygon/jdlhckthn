@@ -394,6 +394,10 @@ border-radius: 4px;
   padding: 0 0 20px 0;
 }
 
+.shockingreveal{
+  display: none;
+}
+
 .chat{
 font-size: 13px;
 font-weight: 500;
