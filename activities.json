@@ -70,7 +70,8 @@
       ],
       "maxusers": 3,
       "users": [
-        "oliver"
+        "oliver",
+        "luca"
       ],
       "creator": "oliver"
     },
@@ -113,7 +114,8 @@
       ],
       "maxusers": 2,
       "users": [
-        "marc"
+        "marc",
+        "luca"
       ],
       "creator": "marc"
     },
@@ -239,7 +241,8 @@
       "category": "1",
       "maxusers": "4",
       "users": [
-        "admin"
+        "admin",
+        "luca"
       ],
       "creator": "admin",
       "coordinates": [

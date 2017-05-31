@@ -16,6 +16,7 @@ function join(ide) {
               contentType: 'application/json',
               success: function(data) {
                 console.log("wat: " + data);
+                 Materialize.toast('Hooray! You joined ' + data.name, 4000)
               }
             });
             console.log("---");
