@@ -41,14 +41,7 @@
       "maxusers": 4,
       "users": [
         "leon",
-        "chris",
-        "luca",
-        "lukas",
-        "luca",
-        "luca",
-        "luca",
-        "luca",
-        "luca"
+        "chris"
       ],
       "creator": "leon"
     },
@@ -65,13 +58,11 @@
       "category": "learning",
       "tags": [
         "homework",
-        "swimming",
         "maths"
       ],
       "maxusers": 3,
       "users": [
         "oliver",
-        "luca"
       ],
       "creator": "oliver"
     },
@@ -88,7 +79,7 @@
       "category": "sport",
       "tags": [
         "outdoor",
-        "climibing"
+        "climbing"
       ],
       "maxusers": 8,
       "users": [
@@ -219,96 +210,14 @@
       "location": "Cineplex",
       "category": "leisure activity",
       "tags": [
-        "movies",
-        "swimming"
+        "movies"
       ],
       "maxusers": 20,
       "users": [
         "tom"
       ],
       "creator": "tom"
-    },
-    {
-      "id": 44558,
-      "name": "Wat",
-      "date": "TBD",
-      "description": "ddd",
-      "location": "dd",
-      "tags": [
-        "1",
-        "2"
-      ],
-      "category": "1",
-      "maxusers": "4",
-      "users": [
-        "admin",
-        "luca"
-      ],
-      "creator": "admin",
-      "coordinates": [
-        50.77940353390704,
-        6.063251495361329
-      ]
-    },
-    {
-      "id": 18710,
-      "name": "Joggen gehen",
-      "date": "TBD",
-      "coord": [],
-      "description": "sehr viel joggen",
-      "location": "Könighügel",
-      "tags": [
-        "2"
-      ],
-      "category": "1",
-      "maxusers": "12",
-      "users": [
-        "admin"
-      ],
-      "creator": "admin",
-      "coordinates": [
-        50.77864372789816,
-        6.0692596435546875
-      ]
-    },
-    {
-      "id": 20108,
-      "name": "ppppp",
-      "date": "TBD",
-      "coord": [],
-      "description": "pppp\n\n",
-      "location": "ppppp",
-      "tags": [
-        "1"
-      ],
-      "category": "2",
-      "maxusers": "44",
-      "users": [
-        "admin"
-      ],
-      "creator": "admin",
-      "coordinates": []
-    },
-    {
-      "id": 82113,
-      "name": "title",
-      "date": "TBD",
-      "coord": [],
-      "description": "description",
-      "location": "somewhere",
-      "tags": [
-        "1"
-      ],
-      "category": "2",
-      "maxusers": "4",
-      "users": [
-        "admin"
-      ],
-      "creator": "admin",
-      "coordinates": [
-        50.78143866775431,
-        6.081748008728028
-      ]
     }
   ]
+
 }
