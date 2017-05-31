@@ -1,338 +1,246 @@
 {
-  "activities": [
-    {
-      "id": 1,
-      "name": "LaserTag Aachen",
-      "date": "",
-      "coordinates": [
-        50.7914234,
-        6.1197013
-      ],
-      "description": "Me and my friends want to play LaserTag this weekend and need some more people",
-      "location": "Black LaserTag",
-      "category": "sport",
-      "tags": [
-        "action",
-        "teamsport"
-      ],
-      "maxusers": 8,
-      "users": [
-        "luca",
-        "chris",
-        "lukas",
-        "fred"
-      ],
-      "creator": "chris"
-    },
-    {
-      "id": 2,
-      "name": "Competetive Swimmtraining",
-      "date": "02.06.2017",
-      "coordinates": [
-        50.7759468,
-        6.0751951
-      ],
-      "description": "I'm a competetive swimmer and go swimming on a regular basis. Want to join me?",
-      "category": "sport",
-      "tags": [
-        "indoor",
-        "swimming"
-      ],
-      "maxusers": 4,
-      "users": [
-        "leon",
-        "chris",
-        "luca",
-        "lukas",
-        "luca",
-        "luca",
-        "luca",
-        "luca",
-        "luca"
-      ],
-      "creator": "leon"
-    },
-    {
-      "id": 3,
-      "name": "Homework in linear algebra",
-      "date": "",
-      "coordinates": [
-        50.7800363,
-        6.0745124
-      ],
-      "description": "The current homework for linear algebra has a lot of bonus exercises and I need some help with them.",
-      "location": "Audimax",
-      "category": "learning",
-      "tags": [
-        "homework",
-        "swimming",
-        "maths"
-      ],
-      "maxusers": 3,
-      "users": [
-        "oliver",
-        "luca"
-      ],
-      "creator": "oliver"
-    },
-    {
-      "id": 4,
-      "name": "Climbing in the woods",
-      "date": "10.06.2017",
-      "coordinates": [
-        50.7419513,
-        6.0474292
-      ],
-      "description": "Let's go climbing together!",
-      "location": "Kletterwald Aachen",
-      "category": "sport",
-      "tags": [
-        "outdoor",
-        "climibing"
-      ],
-      "maxusers": 8,
-      "users": [
-        "alena"
-      ],
-      "creator": "alena"
-    },
-    {
-      "id": 5,
-      "name": "Programming my own website",
-      "date": "",
-      "coordinates": [
-        50.778325,
-        6.0796504
-      ],
-      "description": "I am looking for someone who can help me with animations based on js. Food and Beer inclusive :)",
-      "location": "Semi 90",
-      "category": "programming",
-      "tags": [
-        "development",
-        "coding",
-        "web"
-      ],
-      "maxusers": 2,
-      "users": [
-        "marc",
-        "luca"
-      ],
-      "creator": "marc"
-    },
-    {
-      "id": 6,
-      "name": "Nice round of Billard",
-      "date": "30.05.2017",
-      "coordinates": [
-        50.7783391,
-        6.0714428
-      ],
-      "description": "Spontaneous activity for playing Billard tonight",
-      "location": "Billard Café Lichthof",
-      "category": "leisure activity",
-      "tags": [
-        "billard",
-        "pub",
-        "bar"
-      ],
-      "maxusers": 4,
-      "users": [
-        "ina",
-        "fabian",
-        "luca"
-      ],
-      "creator": "ina"
-    },
-    {
-      "id": 7,
-      "name": "LAN-Party",
-      "date": "16.06.2017",
-      "coordinates": [
-        50.782894,
-        6.103255
-      ],
-      "description": "24h LAN-Party with shooter-games like CS:GO and COD",
-      "location": "At my place",
-      "category": "gaming",
-      "tags": [
-        "shooter",
-        "playing"
-      ],
-      "maxusers": 8,
-      "users": [
-        "frank",
-        "michael",
-        "richard"
-      ],
-      "creator": "frank"
-    },
-    {
-      "id": 8,
-      "name": "Bowling",
-      "date": "07.06.2017",
-      "coordinates": [
-        50.8580614,
-        5.994131
-      ],
-      "description": "We need some more players for this cool bowling evening. Come join us!",
-      "location": "Bowlo",
-      "category": "leisure activity",
-      "tags": [
-        "bowling"
-      ],
-      "maxusers": 6,
-      "users": [
-        "julian",
-        "sven"
-      ],
-      "creator": "julian"
-    },
-    {
-      "id": 9,
-      "name": "Sushi Dinner",
-      "date": "22.06.2017",
-      "coordinates": [
-        50.7709668,
-        6.0859558
-      ],
-      "description": "We love Sushi and we invite everyone to come and have a chill dinner together with us.",
-      "location": "Lemongrass",
-      "category": "eating",
-      "tags": [
-        "sushi",
-        "dinner"
-      ],
-      "maxusers": 8,
-      "users": [
-        "caroline"
-      ],
-      "creator": "caroline"
-    },
-    {
-      "id": 10,
-      "name": "Cinema",
-      "date": "08.06.2017",
-      "coordinates": [
-        50.7710701,
-        6.0859558
-      ],
-      "description": "I'm so hyped for the new mummy-movie, want to watch it with me?",
-      "location": "Cineplex",
-      "category": "leisure activity",
-      "tags": [
-        "movies",
-        "swimming"
-      ],
-      "maxusers": 20,
-      "users": [
-        "tom"
-      ],
-      "creator": "tom"
-    },
-    {
-      "id": 44558,
-      "name": "Wat",
-      "date": "TBD",
-      "description": "ddd",
-      "location": "dd",
-      "tags": [
-        "1",
-        "2"
-      ],
-      "category": "1",
-      "maxusers": "4",
-      "users": [
-        "admin",
-        "luca"
-      ],
-      "creator": "admin",
-      "coordinates": [
-        50.77940353390704,
-        6.063251495361329
-      ]
-    },
-    {
-      "id": 18710,
-      "name": "Joggen gehen",
-      "date": "TBD",
-      "coord": [],
-      "description": "sehr viel joggen",
-      "location": "Könighügel",
-      "tags": [
-        "2"
-      ],
-      "category": "1",
-      "maxusers": "12",
-      "users": [
-        "admin"
-      ],
-      "creator": "admin",
-      "coordinates": [
-        50.77864372789816,
-        6.0692596435546875
-      ]
-    },
-    {
-      "id": 20108,
-      "name": "ppppp",
-      "date": "TBD",
-      "coord": [],
-      "description": "pppp\n\n",
-      "location": "ppppp",
-      "tags": [
-        "1"
-      ],
-      "category": "2",
-      "maxusers": "44",
-      "users": [
-        "admin"
-      ],
-      "creator": "admin",
-      "coordinates": []
-    },
-    {
-      "id": 82113,
-      "name": "title",
-      "date": "TBD",
-      "coord": [],
-      "description": "description",
-      "location": "somewhere",
-      "tags": [
-        "1"
-      ],
-      "category": "2",
-      "maxusers": "4",
-      "users": [
-        "admin"
-      ],
-      "creator": "admin",
-      "coordinates": [
-        50.78143866775431,
-        6.081748008728028
-      ]
-    },
-    {
-      "id": 63780,
-      "name": "Outdoor Extrem Bowling - with chainsaws",
-      "date": "TBD",
-      "coord": [],
-      "description": "Enamel pin migas lomo lo-fi. Coloring book asymmetrical raclette cred, prism selfies actually organic church-key swag iPhone brunch hella. Lomo PBR&B viral cronut you probably haven't heard of them polaroid +1 cliche, thundercats keytar letterpress. Four dollar toast umami blog raw denim. Synth pop-up adaptogen, keytar offal actually leggings church-key meditation flannel occupy celiac tumeric schlitz fashion axe. Selfies tacos aesthetic you probably haven't heard of them, unicorn franzen ramps shaman direct trade bicycle rights lumbersexual shoreditch roof party readymade actually. Blog slow-carb fanny pack, gochujang meditation twee cardigan portland.",
-      "location": "Westpark",
-      "tags": [
-        "action",
-        "outdoor",
-        "bowling"
-      ],
-      "category": "sport",
-      "maxusers": "666",
-      "users": [
-        "admin"
-      ],
-      "creator": "admin",
-      "coordinates": [
-        50.771642077294885,
-        6.067028045654298
-      ]
-    }
-  ]
+    "activities": [{
+            "id": 1,
+            "name": "LaserTag Aachen",
+            "date": "",
+            "coordinates": [
+                50.7914234,
+                6.1197013
+            ],
+            "description": "Me and my friends want to play LaserTag this weekend and need some more people",
+            "location": "Black LaserTag",
+            "category": "sport",
+            "tags": [
+                "action",
+                "teamsport"
+            ],
+            "maxusers": 8,
+            "users": [
+                "luca",
+                "chris",
+                "lukas",
+                "fred"
+            ],
+            "creator": "chris"
+        },
+        {
+            "id": 2,
+            "name": "Competetive Swimmtraining",
+            "date": "02.06.2017",
+            "coordinates": [
+                50.7759468,
+                6.0751951
+            ],
+            "description": "I'm a competetive swimmer and go swimming on a regular basis. Want to join me?",
+            "category": "sport",
+            "tags": [
+                "indoor",
+                "swimming"
+            ],
+            "maxusers": 4,
+            "users": [
+                "leon",
+                "chris"
+            ],
+            "creator": "leon"
+        },
+        {
+            "id": 3,
+            "name": "Homework in linear algebra",
+            "date": "",
+            "coordinates": [
+                50.7800363,
+                6.0745124
+            ],
+            "description": "The current homework for linear algebra has a lot of bonus exercises and I need some help with them.",
+            "location": "Audimax",
+            "category": "learning",
+            "tags": [
+                "homework",
+                "maths"
+            ],
+            "maxusers": 3,
+            "users": [
+                "oliver",
+            ],
+            "creator": "oliver"
+        },
+        {
+            "id": 4,
+            "name": "Climbing in the woods",
+            "date": "10.06.2017",
+            "coordinates": [
+                50.7419513,
+                6.0474292
+            ],
+            "description": "Let's go climbing together!",
+            "location": "Kletterwald Aachen",
+            "category": "sport",
+            "tags": [
+                "outdoor",
+                "climbing"
+            ],
+            "maxusers": 8,
+            "users": [
+                "alena"
+            ],
+            "creator": "alena"
+        },
+        {
+            "id": 5,
+            "name": "Programming my own website",
+            "date": "",
+            "coordinates": [
+                50.778325,
+                6.0796504
+            ],
+            "description": "I am looking for someone who can help me with animations based on js. Food and Beer inclusive :)",
+            "location": "Semi 90",
+            "category": "programming",
+            "tags": [
+                "development",
+                "coding",
+                "web"
+            ],
+            "maxusers": 2,
+            "users": [
+                "marc",
+                "luca"
+            ],
+            "creator": "marc"
+        },
+        {
+            "id": 6,
+            "name": "Nice round of Billard",
+            "date": "30.05.2017",
+            "coordinates": [
+                50.7783391,
+                6.0714428
+            ],
+            "description": "Spontaneous activity for playing Billard tonight",
+            "location": "Billard Café Lichthof",
+            "category": "leisure activity",
+            "tags": [
+                "billard",
+                "pub",
+                "bar"
+            ],
+            "maxusers": 4,
+            "users": [
+                "ina",
+                "fabian",
+                "luca"
+            ],
+            "creator": "ina"
+        },
+        {
+            "id": 7,
+            "name": "LAN-Party",
+            "date": "16.06.2017",
+            "coordinates": [
+                50.782894,
+                6.103255
+            ],
+            "description": "24h LAN-Party with shooter-games like CS:GO and COD",
+            "location": "At my place",
+            "category": "gaming",
+            "tags": [
+                "shooter",
+                "playing"
+            ],
+            "maxusers": 8,
+            "users": [
+                "frank",
+                "michael",
+                "richard"
+            ],
+            "creator": "frank"
+        },
+        {
+            "id": 8,
+            "name": "Bowling",
+            "date": "07.06.2017",
+            "coordinates": [
+                50.8580614,
+                5.994131
+            ],
+            "description": "We need some more players for this cool bowling evening. Come join us!",
+            "location": "Bowlo",
+            "category": "leisure activity",
+            "tags": [
+                "bowling"
+            ],
+            "maxusers": 6,
+            "users": [
+                "julian",
+                "sven"
+            ],
+            "creator": "julian"
+        },
+        {
+            "id": 9,
+            "name": "Sushi Dinner",
+            "date": "22.06.2017",
+            "coordinates": [
+                50.7709668,
+                6.0859558
+            ],
+            "description": "We love Sushi and we invite everyone to come and have a chill dinner together with us.",
+            "location": "Lemongrass",
+            "category": "eating",
+            "tags": [
+                "sushi",
+                "dinner"
+            ],
+            "maxusers": 8,
+            "users": [
+                "caroline"
+            ],
+            "creator": "caroline"
+        },
+        {
+            "id": 10,
+            "name": "Cinema",
+            "date": "08.06.2017",
+            "coordinates": [
+                50.7710701,
+                6.0859558
+            ],
+            "description": "I'm so hyped for the new mummy-movie, want to watch it with me?",
+            "location": "Cineplex",
+            "category": "leisure activity",
+            "tags": [
+                "movies"
+            ],
+            "maxusers": 20,
+            "users": [
+                "tom"
+            ],
+            "creator": "tom"
+        },
+        {
+            "id": 63780,
+            "name": "Outdoor Extrem Bowling - with chainsaws",
+            "date": "TBD",
+            "coord": [],
+            "description": "Enamel pin migas lomo lo-fi. Coloring book asymmetrical raclette cred, prism selfies actually organic church-key swag iPhone brunch hella. Lomo PBR&B viral cronut you probably haven't heard of them polaroid +1 cliche, thundercats keytar letterpress. Four dollar toast umami blog raw denim. Synth pop-up adaptogen, keytar offal actually leggings church-key meditation flannel occupy celiac tumeric schlitz fashion axe. Selfies tacos aesthetic you probably haven't heard of them, unicorn franzen ramps shaman direct trade bicycle rights lumbersexual shoreditch roof party readymade actually. Blog slow-carb fanny pack, gochujang meditation twee cardigan portland.",
+            "location": "Westpark",
+            "tags": [
+                "action",
+                "outdoor",
+                "bowling"
+            ],
+            "category": "sport",
+            "maxusers": "666",
+            "users": [
+                "admin"
+            ],
+            "creator": "admin",
+            "coordinates": [
+                50.771642077294885,
+                6.067028045654298
+            ]
+        }
+    ]
+
 }
