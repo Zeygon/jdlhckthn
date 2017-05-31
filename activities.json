@@ -138,7 +138,8 @@
       "maxusers": 4,
       "users": [
         "ina",
-        "fabian"
+        "fabian",
+        "luca"
       ],
       "creator": "ina"
     },
@@ -308,6 +309,29 @@
       "coordinates": [
         50.78143866775431,
         6.081748008728028
+      ]
+    },
+    {
+      "id": 63780,
+      "name": "Outdoor Extrem Bowling - with chainsaws",
+      "date": "TBD",
+      "coord": [],
+      "description": "Enamel pin migas lomo lo-fi. Coloring book asymmetrical raclette cred, prism selfies actually organic church-key swag iPhone brunch hella. Lomo PBR&B viral cronut you probably haven't heard of them polaroid +1 cliche, thundercats keytar letterpress. Four dollar toast umami blog raw denim. Synth pop-up adaptogen, keytar offal actually leggings church-key meditation flannel occupy celiac tumeric schlitz fashion axe. Selfies tacos aesthetic you probably haven't heard of them, unicorn franzen ramps shaman direct trade bicycle rights lumbersexual shoreditch roof party readymade actually. Blog slow-carb fanny pack, gochujang meditation twee cardigan portland.",
+      "location": "Westpark",
+      "tags": [
+        "action",
+        "outdoor",
+        "bowling"
+      ],
+      "category": "sport",
+      "maxusers": "666",
+      "users": [
+        "admin"
+      ],
+      "creator": "admin",
+      "coordinates": [
+        50.771642077294885,
+        6.067028045654298
       ]
     }
   ]
